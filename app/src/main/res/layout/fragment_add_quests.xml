@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuestsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ready_set_quest"
+                    android:textColor="#40513B"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    android:letterSpacing="0.1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set another challenge!"
+                    android:textColor="#40513B"
+                    android:textSize="16sp"/>
+
+                <EditText android:id="@+id/commissionerName_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box_with_line"
+                    android:hint="Enter name of commissioner"
+                    android:layout_marginVertical="10dp"
+                    android:padding="10dp"
+                    android:enabled="true"
+                    android:textColor="#40513B"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <CheckBox android:id="@+id/checkAnonymous"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT ANONYMOUSLY"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#40513B"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quest Title:"
+                    android:layout_marginVertical="5dp"
+                    android:textColor="#40513B"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+                <EditText android:id="@+id/questTitle_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box_with_line"
+                    android:hint="Enter title"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textColor="#40513B"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:layout_marginVertical="5dp"
+                    android:textColor="#40513B"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+                <EditText android:id="@+id/questDescription_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:background="@drawable/box_with_line"
+                    android:hint="Enter description"
+                    android:textSize="12sp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#40513B"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Materials:"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#40513B"/>
+
+                <LinearLayout android:id="@+id/materials_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                </LinearLayout>
+
+                <ImageButton android:id="@+id/addMaterial_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/addboxicon"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/mainColor"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:padding="10dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/maximum_number_of_quest_takers"
+                        android:textColor="@color/mainColor"
+                        android:textSize="16sp"/>
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="1dp"/>
+
+                    <EditText android:id="@+id/questTakersNum_np"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:textColor="#40513B"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <Button android:id="@+id/post_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/mainColor"
+                    android:text="Post Quest"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondaryColor"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

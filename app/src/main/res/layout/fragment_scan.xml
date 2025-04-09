@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit:"
+            android:textColor="#40513B"
+            android:textStyle="bold"
+            android:textSize="52sp"/>
+        <Button android:id="@+id/quest_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quest"
+            android:textSize="32sp"/>
+        <Button android:id="@+id/rawMats_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raw Materials"
+            android:textSize="32sp"/>
+    </LinearLayout>
+
+</FrameLayout>

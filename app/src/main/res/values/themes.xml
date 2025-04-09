@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WasteWisePartner" parent="Theme.Material3.DayNight.NoActionBar">
+        <item  name="colorPrimary">@color/mainColor</item>
+        <item  name="colorOnPrimary">@color/secondaryColor</item>
+        <item  name="colorSecondary">@color/mainColor</item>
+        <item  name="colorOnSecondary">@color/secondaryColor</item>
+
+        <item name="android:checkboxStyle">@style/CustomCheckbox</item>
+        <item name="android:editTextStyle">@style/CustomET</item>
+    </style>
+
+    <style name="Theme.WasteWisePartner" parent="Base.Theme.WasteWisePartner" />
+
+    <style name="CustomCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/mainColor</item>
+    </style>
+    <style name="CustomET" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/mainColor</item>
+    </style>
+</resources>

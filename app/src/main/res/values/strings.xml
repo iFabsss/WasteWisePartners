@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WasteWisePartner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lead_the_way_one_quest_at_a_time">Lead the Way - One Quest at a Time</string>
+    <string name="ready_set_quest">READY, SET, QUEST!</string>
+    <string name="maximum_number_of_quest_takers">Maximum Number of Quest Takers:</string>
+</resources>

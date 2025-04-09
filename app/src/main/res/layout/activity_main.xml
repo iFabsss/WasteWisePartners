@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EDF1D6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/topNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9DC08B"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+            <ImageView android:id="@+id/wastewise_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wastewiseicon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WasteWise"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/wastewise_icon"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+            <ImageButton android:id="@+id/profile_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/profileicon"
+                android:layout_alignParentEnd="true"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"/>
+            <ImageButton android:id="@+id/notification_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/notificationicon"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/profile_icon"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <FrameLayout android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topNavigationView"
+            android:layout_above="@id/bottomNavigationView">
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemTextColor="#40513B"
+            app:menu="@menu/bottom_nav_menu"
+            android:layout_alignParentBottom="true"
+            app:itemIconSize="40dp"
+            app:itemIconTint="#40513B"
+            app:itemTextAppearanceActiveBoldEnabled="true"
+            android:background="#9DC08B"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/overlay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:visibility="gone"
+        android:background="#6D000000">
+    </FrameLayout>
+
+</FrameLayout>
