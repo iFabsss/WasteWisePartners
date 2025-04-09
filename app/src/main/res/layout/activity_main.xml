@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="WasteWise"
+                android:text="WasteWise Partners"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@id/wastewise_icon"
                 android:textStyle="bold"
