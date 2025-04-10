@@ -96,4 +96,4 @@ After submission, the partner physically **verifies the materials** and then con
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/WasteWisePartners.git
+   git clone https://github.com/iFabsss/WasteWisePartners.git
